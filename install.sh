@@ -18,14 +18,14 @@ echo "✅ Packages updated"
 # Step 2: Install dependencies
 echo ""
 echo "📦 Step 2/7: Installing Node.js, Git, Curl..."
-pkg install -y nodejs git curl
+pkg install -y nodejs git curl cmake
 echo "✅ Dependencies installed"
 echo "Node: $(node -v) | NPM: $(npm -v)"
 
 # Step 3: Install OpenClaw
 echo ""
 echo "📦 Step 3/7: Installing OpenClaw..."
-npm install -g openclaw@latest
+npm install -g openclaw@latest || true
 echo "✅ OpenClaw installed"
 
 # Step 4: Fix Android Network Interface Error

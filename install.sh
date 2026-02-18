@@ -61,11 +61,13 @@ echo ""
 echo "📌 Get your FREE Gemini API key from:"
 echo "   https://aistudio.google.com/apikey"
 echo ""
-read -p "Enter your Gemini API Key: " GEMINI_KEY
+printf "Enter your Gemini API Key: "
+read GEMINI_KEY < /dev/tty 2>/dev/null || GEMINI_KEY=""
 if [ -n "$GEMINI_KEY" ]; then
     openclaw auth add google --key "$GEMINI_KEY" 2>/dev/null || true
     echo "✅ API key saved"
-else
+fi
+if [ -z "$GEMINI_KEY" ]; then
     echo "⚠️  Skipped. Add later: openclaw auth add google --key YOUR_KEY"
 fi
 

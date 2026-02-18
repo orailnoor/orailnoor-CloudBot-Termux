@@ -4,7 +4,7 @@
 # Run: curl -sL https://raw.githubusercontent.com/orailnoor/orailnoor-CloudBot-Termux/main/install.sh | bash
 # ============================================
 
-set -e
+
 
 echo ""
 echo "🤖 CloudBot-Termux Installer"

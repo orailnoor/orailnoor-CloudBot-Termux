@@ -20,7 +20,7 @@ echo "✅ Packages updated"
 # Step 2: Install dependencies
 echo ""
 echo "📦 Step 2/6: Installing Node.js, Git, Curl..."
-pkg install -y nodejs-lts git curl 2>/dev/null
+pkg install -y nodejs-lts git curl cmake 2>/dev/null
 echo "✅ Dependencies installed"
 
 # Step 3: Fix ifconfig

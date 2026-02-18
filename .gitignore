@@ -1,0 +1,14 @@
+# Images (screenshots from development)
+*.png
+
+# Config with secrets
+openclaw_config.json
+
+# Node
+node_modules/
+
+# OS
+.DS_Store
+
+# Logs
+*.log

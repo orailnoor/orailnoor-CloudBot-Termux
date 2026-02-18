@@ -61,8 +61,7 @@ chmod +x /data/data/com.termux/files/usr/bin/ifconfig
 
 ### Step 4 — Install OpenClaw CLI
 ```bash
-npm install -g openclaw@latest --ignore-scripts
-cd /data/data/com.termux/files/usr/lib/node_modules/openclaw && npm rebuild koffi
+npm install -g openclaw@latest 2>&1 || true
 ```
 
 ### Step 5 — Onboard (creates config + workspace)

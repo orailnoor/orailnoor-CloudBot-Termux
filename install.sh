@@ -38,7 +38,9 @@ echo "✅ Network fix applied"
 # Step 4: Install OpenClaw
 echo ""
 echo "📦 Step 4/6: Installing OpenClaw..."
-npm install -g openclaw@latest 2>&1 || true
+npm install -g openclaw@latest --ignore-scripts
+cd "$(npm root -g)/openclaw" && npm rebuild koffi
+cd ~
 echo "✅ OpenClaw installed"
 
 # Step 5: Download scripts

@@ -39,6 +39,7 @@ echo "✅ Network fix applied"
 echo ""
 echo "📦 Step 4/6: Installing OpenClaw..."
 npm install -g openclaw@latest --ignore-scripts 2>/dev/null
+cd /data/data/com.termux/files/usr/lib/node_modules/openclaw && npm rebuild koffi 2>/dev/null
 echo "✅ OpenClaw installed"
 
 # Step 5: Download scripts

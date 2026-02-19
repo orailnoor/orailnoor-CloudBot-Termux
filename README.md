@@ -39,6 +39,8 @@ Send a Telegram message → AI executes it on your phone:
 
 Open **Termux** (install from [F-Droid](https://f-droid.org/en/packages/com.termux/), NOT Play Store) and run:
 
+> ⚠️ **Note:** This automated script is currently unstable. Please use the **[Manual Setup](#-manual-setup)** method below for now. I will fix the script when I have time!
+
 ```bash
 curl -sL https://raw.githubusercontent.com/orailnoor/orailnoor-CloudBot-Termux/main/install.sh | bash
 ```

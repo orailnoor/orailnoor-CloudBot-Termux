@@ -65,7 +65,7 @@ If you prefer step-by-step, see **[FULL_SETUP_GUIDE.md](FULL_SETUP_GUIDE.md)**.
 **1. Update & install base packages:**
 ```bash
 yes | pkg update && yes | pkg upgrade
-pkg install -y nodejs-lts git curl
+pkg install -y nodejs git curl
 ```
 
 **2. Fix network interface (required):**

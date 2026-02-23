@@ -41,7 +41,7 @@ yes | pkg update && yes | pkg upgrade
 
 ### Step 2 — Install dependencies
 ```bash
-pkg install -y nodejs-lts git curl
+pkg install -y nodejs git curl
 ```
 
 ### Step 3 — Fix network interface error (required for OpenClaw)

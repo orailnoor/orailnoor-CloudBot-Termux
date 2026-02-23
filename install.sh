@@ -15,7 +15,7 @@ echo "✅ Done"
 # Step 2
 echo ""
 echo "📦 Step 2/5: Installing dependencies..."
-pkg install -y nodejs git curl
+pkg install -y nodejs git curl cmake
 echo "✅ Done"
 
 # Step 3

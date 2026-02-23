@@ -81,7 +81,7 @@ chmod +x /data/data/com.termux/files/usr/bin/ifconfig
 
 **3. Install OpenClaw:**
 ```bash
-npm install -g openclaw@2026.2.19
+npm install -g openclaw@2026.2.19 --ignore-scripts
 openclaw onboard
 ```
 

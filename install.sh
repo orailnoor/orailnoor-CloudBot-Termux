@@ -33,7 +33,7 @@ echo "✅ Done"
 # Step 4
 echo ""
 echo "📦 Step 4/5: Installing OpenClaw..."
-npm install -g openclaw@2026.2.19
+npm install -g openclaw@2026.2.19 --ignore-scripts
 echo "✅ Done"
 
 # Step 5

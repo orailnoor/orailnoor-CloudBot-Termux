@@ -39,8 +39,6 @@ Send a Telegram message → AI executes it on your phone:
 
 Open **Termux** (install from [F-Droid](https://f-droid.org/en/packages/com.termux/), NOT Play Store) and run:
 
-> ⚠️ **Note:** This automated script is currently unstable. Please use the **[Manual Setup](#-manual-setup)** method below for now. I will fix the script when I have time!
-
 ```bash
 curl -sL https://raw.githubusercontent.com/orailnoor/orailnoor-CloudBot-Termux/main/install.sh | bash
 ```
@@ -83,7 +81,7 @@ chmod +x /data/data/com.termux/files/usr/bin/ifconfig
 
 **3. Install OpenClaw:**
 ```bash
-npm install -g openclaw@latest --ignore-scripts
+npm install -g openclaw@2026.2.19
 openclaw onboard
 ```
 
@@ -167,7 +165,6 @@ Uses **Gemini 2.5 Flash Lite** — Google's cheapest AI model:
 
 | Issue | Fix |
 |---|---|
-| `npm install` fails with C++ errors | Add `--ignore-scripts` flag |
 | "Gateway service not supported" | Normal on Android — run `openclaw gateway --verbose` manually |
 | Magisk root toast notifications | Magisk → Settings → Superuser Notification → None |
 | Screen flipped | `adb shell settings put system user_rotation 0` |

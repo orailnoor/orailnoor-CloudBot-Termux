@@ -7,20 +7,20 @@ echo "━━━━━━━━━━━━━━━━━━━━━━━━�
 echo ""
 
 # Step 1
-echo "📦 Step 1/6: Updating packages..."
+echo "📦 Step 1/5: Updating packages..."
 yes | pkg update
 yes | pkg upgrade
 echo "✅ Done"
 
 # Step 2
 echo ""
-echo "📦 Step 2/6: Installing dependencies..."
-pkg install -y nodejs-lts git curl cmake
+echo "📦 Step 2/5: Installing dependencies..."
+pkg install -y nodejs-lts git curl
 echo "✅ Done"
 
 # Step 3
 echo ""
-echo "🔧 Step 3/6: Fixing network interface..."
+echo "🔧 Step 3/5: Fixing network interface..."
 cat > /data/data/com.termux/files/usr/bin/ifconfig << 'EOF'
 #!/data/data/com.termux/files/usr/bin/sh
 echo "lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536"
@@ -32,22 +32,13 @@ echo "✅ Done"
 
 # Step 4
 echo ""
-echo "📦 Step 4/6: Installing OpenClaw..."
-npm install -g openclaw@latest --ignore-scripts
+echo "📦 Step 4/5: Installing OpenClaw..."
+npm install -g openclaw@2026.2.19
 echo "✅ Done"
 
-# Step 5: Build koffi (required native module)
+# Step 5
 echo ""
-echo "🔧 Step 5/6: Building native module..."
-OPENCLAW_DIR="$(npm root -g)/openclaw"
-cd "$OPENCLAW_DIR"
-npm rebuild koffi
-cd ~
-echo "✅ Done"
-
-# Step 6
-echo ""
-echo "📥 Step 6/6: Downloading scripts..."
+echo "📥 Step 5/5: Downloading scripts..."
 REPO="https://raw.githubusercontent.com/orailnoor/orailnoor-CloudBot-Termux/main"
 curl -sL "$REPO/phone_control.sh" > ~/phone_control.sh && chmod +x ~/phone_control.sh
 curl -sL "$REPO/phone_agent.sh" > ~/phone_agent.sh && chmod +x ~/phone_agent.sh

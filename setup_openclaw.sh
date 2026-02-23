@@ -20,7 +20,7 @@ echo "Git version: $(git --version)"
 
 # Step 3: Install OpenClaw
 echo "[3/5] Installing OpenClaw..."
-npm install -g openclaw@latest
+npm install -g openclaw@2026.2.19
 
 echo "OpenClaw version: $(openclaw --version 2>/dev/null || echo 'install may have failed')"
 

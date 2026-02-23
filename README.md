@@ -65,7 +65,7 @@ If you prefer step-by-step, see **[FULL_SETUP_GUIDE.md](FULL_SETUP_GUIDE.md)**.
 **1. Update & install base packages:**
 ```bash
 yes | pkg update && yes | pkg upgrade
-pkg install -y nodejs git curl cmake
+pkg install -y nodejs git curl cmake make clang binutils
 ```
 
 **2. Fix network interface (required):**
@@ -81,7 +81,7 @@ chmod +x /data/data/com.termux/files/usr/bin/ifconfig
 
 **3. Install OpenClaw:**
 ```bash
-npm install -g openclaw@2026.2.19 --ignore-scripts
+npm install -g openclaw@2026.2.19
 openclaw onboard
 ```
 

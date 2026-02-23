@@ -15,7 +15,7 @@ echo "✅ Done"
 # Step 2
 echo ""
 echo "📦 Step 2/5: Installing dependencies..."
-pkg install -y nodejs git curl cmake
+pkg install -y nodejs git curl cmake make clang binutils
 echo "✅ Done"
 
 # Step 3
@@ -33,7 +33,7 @@ echo "✅ Done"
 # Step 4
 echo ""
 echo "📦 Step 4/5: Installing OpenClaw..."
-npm install -g openclaw@2026.2.19 --ignore-scripts
+npm install -g openclaw@2026.2.19
 echo "✅ Done"
 
 # Step 5

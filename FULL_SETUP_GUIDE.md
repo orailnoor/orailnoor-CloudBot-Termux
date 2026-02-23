@@ -41,7 +41,7 @@ yes | pkg update && yes | pkg upgrade
 
 ### Step 2 — Install dependencies
 ```bash
-pkg install -y nodejs git curl cmake
+pkg install -y nodejs git curl cmake make clang binutils
 ```
 
 ### Step 3 — Fix network interface error (required for OpenClaw)
@@ -61,7 +61,7 @@ chmod +x /data/data/com.termux/files/usr/bin/ifconfig
 
 ### Step 4 — Install OpenClaw CLI
 ```bash
-npm install -g openclaw@2026.2.19 --ignore-scripts
+npm install -g openclaw@2026.2.19
 ```
 
 ### Step 5 — Onboard (creates config + workspace)

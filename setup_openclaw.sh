@@ -12,7 +12,7 @@ pkg upgrade -y
 
 # Step 2: Install Node.js and Git
 echo "[2/5] Installing Node.js and Git..."
-pkg install -y nodejs git
+pkg install -y nodejs git binutils make clang cmake
 
 echo "Node version: $(node -v)"
 echo "NPM version: $(npm -v)"
@@ -20,7 +20,7 @@ echo "Git version: $(git --version)"
 
 # Step 3: Install OpenClaw
 echo "[3/5] Installing OpenClaw..."
-npm install -g openclaw@2026.2.19 --ignore-scripts
+npm install -g openclaw@2026.2.19
 
 echo "OpenClaw version: $(openclaw --version 2>/dev/null || echo 'install may have failed')"
 

@@ -4,9 +4,9 @@
 # Usage: bash switch_api.sh [1|2|3|show]
 # ============================================
 
-KEY_1="AIzaSyB9aMtzaJtOZRFvVP57kHcKcQ33WTOw_zE"
-KEY_2="AIzaSyAn9KJ8JKB4GRicYkVFppUgr0e3bB-hCdc"
-KEY_3="AIzaSyD0UNoeGv2bH_Zd5Rkb0_XyVSgEVwrYYEU"
+KEY_1="YOUR_API_KEY_1"
+KEY_2="YOUR_API_KEY_2"
+KEY_3="YOUR_API_KEY_3"
 
 AUTH_FILE="$HOME/.openclaw/agents/main/agent/auth-profiles.json"
 CONFIG_FILE="$HOME/.openclaw/openclaw.json"
